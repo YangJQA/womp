@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy 2nd Monthsary!</title>
+  <style>
+    body {
+      font-family: 'Comic Sans MS', 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fff4e6;
+      color: #333;
+      text-align: center;
+    }
+    header {
+      background-color: #ffe4b5;
+      padding: 20px;
+      border-bottom: 5px solid #f9c89b;
+    }
+    h1 {
+      font-size: 2.5em;
+      margin: 0;
+      color: #ff7f50;
+    }
+    .chikawa-image {
+      margin: 20px 0;
+    }
+    .chikawa-image img {
+      width: 200px;
+      height: auto;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    .letter {
+      margin: 20px;
+      padding: 20px;
+      background: #fff;
+      border: 2px dashed #ffb6c1;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      font-size: 1.2em;
+      line-height: 1.6;
+      text-align: left;
+    }
+    footer {
+      margin-top: 20px;
+      padding: 10px;
+      background-color: #ffe4b5;
+      font-size: 0.9em;
+      color: #ff4500;
+    }
+    .music-buttons {
+      margin-top: 20px;
+    }
+    .music-buttons button {
+      padding: 10px 20px;
+      font-size: 1.2em;
+      margin: 5px;
+      background-color: #ffb6c1;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .music-buttons button:hover {
+      background-color: #ff7f50;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Happy 2nd Monthsary!</h1>
+  </header>
+
+  <div class="chikawa-image">
+    <img src="chikawa.gif" alt="Chikawa Character">
+  </div>
+
+  <section class="letter">
+    <p>Happy Monthsary, Love!</p>
+    <p>
+      You gave me a letter the day you asked me to be your girlfriend — now, it’s my turn to give you one too (ka-cringe, pero sige lang).
+    </p>
+    <p>
+      It’s only been a few months since we started, but it already feels like you’ve become such a big part of my heart. I know we’re still at the beginning, and we still have so much to learn and figure out together, but I really hope our relationship becomes stronger, deeper, and lasts for a very, very long time — as in, like, mga forever? HWAHHAHHA.
+    </p>
+    <p>
+      We’ve had some misunderstandings, and I know some of them were hard to solve. There were moments when we didn’t know how to say the right things, or when our feelings clashed, but even through all that, I’m really thankful — because we always try. We don’t give up easily. We talk, we listen, and we choose to understand each other (balag ako dili hehe, sorry, I love you). That means the world to me.
+    </p>
+    <p>
+      I also want to say sorry if I’m hard to deal with sometimes. I know I can be lutang all the time, keep on forgetting things, be moody, stubborn, or too quiet when I’m overwhelmed. Thank you for always being patient with me, for still choosing to hold my hand even when I’m not at my best. Your love really makes me feel safe — like I can just be myself and still be accepted, flaws and all.
+    </p>
+    <p>
+      Also — please lessen your way of being so insecure! You're handsome, Love. You shouldn't be thinking of how other people see you. Everyone has different point of views, who knows? maybe sa ila kay attractive diay ka and you're there thinking gi kataw an naka or gibinuangan ka, don't overthink it too much. To me, you’re gwapo (HEHEHHEHEHEHHEHEHE) You’re handsome in the way your eyes light up when you smile (I love your smile bai, legit), in the way you care so deeply, and in all the little things that make you ikaw. So please, try to see yourself the way I see you — because what I see is someone incredibly attractive, inside and out.
+    </p>
+    <p>
+      Thank you for all the small things, too — the way you check up on me, the way you make me laugh, the way you remember little details about me. Thank you for making me feel special, and for making me feel like I’m someone worth loving.
+    </p>
+    <p>
+      You have no idea how much I adore you. It’s the kind of adoration that sneaks up on me even during random moments — when I’m doing something ordinary, and then suddenly, I think of you, and mingawon dayn ko nimo, luoya nako ani. I adore everything that makes you who you are: your kindness, your laugh, your little quirks, your soft side, and even your kulit side. Being with you feels like coming home.
+    </p>
+    <p>
+      I’m proud and lucky to call you mine (yuck URGH can't imagine myself saying this in real life HAHAHAHHA).
+      I love you.
+    </p>
+    <p>
+      Happy 2nd, Erod. Here’s to more memories, more kulit moments, more late-night talks, more lambing, more hugs, more “us.” I hope we never run out of love to give each other.
+    </p>
+    <p>
+      Forever thankful for you.<br>
+      With all my love,<br>
+      Yang 💗
+    </p>
+  </section>
+
+  <footer>
+    <p>Made with love and Usagi vibes 🐰</p>
+    <!-- Music Buttons -->
+    <div class="music-buttons">
+      <button onclick="playMusic()">Play Music 🎵</button>
+      <button onclick="stopMusic()">Stop Music ✋</button>
+    </div>
+  </footer>
+
+  <!-- Background Music -->
+  <audio id="background-music" loop>
+    <source src="background-music.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <script>
+    function playMusic() {
+      const music = document.getElementById('background-music');
+      music.play();
+    }
+
+    function stopMusic() {
+      const music = document.getElementById('background-music');
+      music.pause();
+      music.currentTime = 0; // Reset to the beginning
+    }
+  </script>
+</body>
+</html>
