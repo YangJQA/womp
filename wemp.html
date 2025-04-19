@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>I open nimo or I open nimo?</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Courier New', monospace;
+      background: #fdf6f0;
+      color: #5e4b56;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+    }
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 1.2em;
+      margin-bottom: 30px;
+    }
+    .button-container {
+      display: flex;
+      gap: 20px;
+    }
+    .button-container button {
+      padding: 10px 20px;
+      font-size: 1em;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .yes-button {
+      background: #5e4b56;
+      color: #fff;
+    }
+    .yes-button:hover {
+      background: #7a6570;
+    }
+    .no-button {
+      background: #d3d3d3;
+      color: #5e4b56;
+    }
+    .no-button:hover {
+      background: #b0b0b0;
+    }
+    #sad-container {
+      display: none;
+      margin-top: 20px;
+      text-align: center;
+    }
+    .gif-container {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      margin-top: 10px;
+    }
+    .gif-container img {
+      width: 100px;
+      height: 100px;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Congratulations, Love!</h1>
+  <p>open it, please? ^.^</p>
+  <div class="button-container">
+    <button class="yes-button" onclick="redirectToWaht()">okay</button>
+    <button class="no-button" onclick="sayNo()">No</button>
+  </div>
+  <div id="sad-container">
+    <p style="font-size: 1.5em; color: #5e4b56;">I open ba, giatay.</p>
+    <div class="gif-container">
+      <img src="haha1.gif" alt="haha GIF 1" />
+      <img src="haha2.gif" alt="haha GIF 2" />
+      <img src="haha3.gif" alt="haha GIF 3" />
+    </div>
+  </div>
+
+  <script>
+    function redirectToWaht() {
+      window.location.href = "waht.html";
+    }
+
+    function sayNo() {
+      const sadContainer = document.getElementById("sad-container");
+      sadContainer.style.display = "block";
+    }
+  </script>
+</body>
+</html>

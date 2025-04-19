@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>To My Love</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Courier New', monospace;
+      background: #fdf6f0;
+      color: #5e4b56;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      scroll-behavior: smooth;
+    }
+    header {
+      padding: 40px;
+      text-align: center;
+    }
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+    .love-letter, .gallery {
+      max-width: 800px;
+      width: 90%;
+      margin: 30px auto;
+      padding: 20px;
+      background: #fffaf7;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    }
+    .love-letter p {
+      line-height: 1.8;
+      font-size: 1.1em;
+    }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 15px;
+      margin-top: 20px;
+    }
+    .gallery-grid img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    .gallery-grid img:hover {
+      transform: scale(1.05);
+    }
+    .audio-controls {
+      margin-top: 30px;
+      text-align: center;
+    }
+    .audio-controls button {
+      background-color: #fffaf7;
+      color: #5e4b56;
+      border: 2px solid #5e4b56;
+      border-radius: 20px;
+      padding: 10px 20px;
+      font-size: 1em;
+      font-family: 'Courier New', monospace;
+      cursor: pointer;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    .audio-controls button:hover {
+      background-color: #5e4b56;
+      color: #fffaf7;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Hi Love ♡</h1>
+    <p>We, your family are proud of you.</p>
+  </header>
+
+  <section class="love-letter">
+    <h2>♡</h2>
+    <p>
+      Congratulations, Langga! 🎓💖<br><br>
+      You did it. After everything you’ve been through—the stress, the long nights, the times you felt like giving up—you made it. I’ve seen it all (though not physically). I saw the way you worked so hard, even when no one was watching. I saw the way you kept going, even when you were tired, sige rag play, frustrated, or full of doubt. You stayed strong. You gave it your all. And now, here you are (WAHH KAHILAKON KO WHILE MAKING THIS LETTER HUHUHUHUHUHU).<br><br>
+      And honestlyyy, I’m not just proud of your achievements—I’m proud of who you are. I’ve watched you go through so much, and I’ve seen how hard you’ve worked to get to this point (though not physically, LDR SUCKSSSSS). It hasn’t always been easy, but you’ve stayed true to yourself every step of the way. You’ve faced challenges and kept pushing through, even when it felt impossible. That’s something not everyone can do.<br><br>
+      I know I wasn’t always easy to deal with during your journey. There were times na I added to your worries, times I misunderstood you, times we fought. I’m really sorry for those times. Pero I want you to know how thankful I am that you stayed, that you still chose to love me through the hard days. We’ve had our ups and downs, but we held on. We grew together. And now, we get to share this happy moment, too. (YAY HEHHEHEHHE)<br><br>
+      Tita, Regreg, and Uncle—they’re also a big part of this victory. I know you and Tita sometimes argue, and I know there are things you don’t always agree on, but she never left your side. She always made sure you were okay, even when you didn’t ask for it. She pushed you when you needed it, supported you in her own way, and I know deep down you feel that love. She’s proud of you, too. I can see it in her eyes when she looks at you.<br><br>
+      I also want you to take a moment to be proud of yourself. Because this wasn’t easy. It took a lot of “kaya paba nako ni?”, “wala nako kamao unsa akong buhaton”, “gikapoy nako bai”, strength and courage to reach this point. You didn’t give up—and I hope you always remember that you’re capable of so much more than you think.<br><br>
+      And now, baby, a new chapter begins. I know it might feel scary sometimes—new responsibilities, big decisions, and the pressure of figuring everything out. But you don’t have to do it all alone. We’ll be right here. We’ll be with you when you feel lost, when you’re unsure, when you’re happy, and when you just need someone to hold your hand and say “Kaya na nimo, you always do.”<br><br>
+      Let’s celebrate this moment, this win. You earned it. I’ll keep supporting you every step of the way. Thank you for letting me be part of this journey—even the messy, complicated, very human parts of it. I wouldn’t trade it for anything. I’ll always be proud of you—on your best days, and even more on your hardest ones.<br><br>
+      I love you so much, Erod.<br>
+      Congratulations again, our graduate, my graduate. I’m proud of you—today and always. 🥹❤️
+    </p>
+  </section>
+
+  <section class="gallery">
+    <h2>ambot unsa ni</h2>
+    <div class="gallery-grid">
+      <img src="pta1.jpeg" alt="Photo 1">
+      <img src="pta2.jpeg" alt="Photo 2">
+      <img src="pta3.jpeg" alt="Photo 3">
+      <img src="pta4.jpeg" alt="Photo 4">
+    </div>
+  </section>
+
+  <audio id="background-music" loop>
+    <source src="background.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <div class="audio-controls">
+    <button id="play-pause-btn">Play ♫</button>
+  </div>
+
+  <script>
+    const audio = document.getElementById('background-music');
+    const playPauseBtn = document.getElementById('play-pause-btn');
+
+    playPauseBtn.addEventListener('click', () => {
+      if (audio.paused) {
+        audio.play();
+        playPauseBtn.textContent = 'Pause ♫';
+      } else {
+        audio.pause();
+        playPauseBtn.textContent = 'Play ♫';
+      }
+    });
+  </script>
+</body>
+</html>
